@@ -1,5 +1,5 @@
 body {
-background-color:indigo;
+background:linear-gradient(black,indigo);
 }
 h1 {
 	color:white;
@@ -9,7 +9,7 @@ h1 {
     width: 100px;
     height: 150px;
     margin-left: 850px; 
-    margin-top: 100px;
+    margin-top: 150px;
 }
    #shipDiv {
    height: 100px;
@@ -27,3 +27,4 @@ h1 {
   width: 100px;
   height: 100px;
 }
+

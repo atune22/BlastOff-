@@ -1,8 +1,10 @@
 var rockMargin;
 
-var rockArray = [550,700,850,1000,1150]
+var rockArray = [100,250,400,550,700,850,1000,1150,1300,1450,1600]
 
 var num = 850; 
+
+document.getElementById('rockThing').style.marginLeft = rockArray[2] + "px";
 
 var rightMove = function () {
 	num += 150;
@@ -13,7 +15,7 @@ var leftMove = function () {
 	document.getElementById('ship').style.marginLeft = num + "px";
 }
 var rockPosition = function(){
-  rockMargin = Math.floor(Math.random()*5);
+  rockMargin = Math.floor(Math.random()*11);
   console.log(rockMargin);
   document.getElementById('rockThing').style.marginLeft = rockArray[rockMargin] + "px";
 }
@@ -25,8 +27,7 @@ var movement = function() {
 	setInterval(function() {
 		check();
 		moveit();
-		console.log(topSpace);
-	},50);
+	},10);
 }
 
 var moveit = function() {
@@ -35,11 +36,15 @@ var moveit = function() {
 }
 
 var check= function() {
-	if (topSpace > 300){
-		if ( num == rockMargin){
-			alert("Game Over") 
+	if (topSpace > 600){
+		if ( num == rockArray[rockMargin]){
+			alert("Game Over! Restart and close to try again.")
+
 		} else{
+			rockPosition();
 			topSpace = 0;
+			console.log(rockArray[rockMargin]);
+			console.log(num);
 		
 		}
 

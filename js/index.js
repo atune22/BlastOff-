@@ -21,6 +21,7 @@ var rockPosition = function(){
 }
 
 
+}
 var topSpace = 0;
 
 var movement = function() {
@@ -45,11 +46,14 @@ var check= function() {
 			topSpace = 0;
 			console.log(rockArray[rockMargin]);
 			console.log(num);
-		
+			score();
 		}
 
 	}
-
+ 
 }
-
+var score = function() {
+	Uscore++;
+	document.getElementById('ascore').innerHTML
+}
 movement();

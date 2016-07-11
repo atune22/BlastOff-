@@ -9,20 +9,24 @@ h1 {
     width: 100px;
     height: 150px;
     margin-left: 850px; 
-    margin-top: 600px;
+    margin-top: 300px;
 }
-   #shipDiv {
+#ascore{
+  text-align: center;
+  font-size: 25px
+}
+#shipDiv {
    height: 100px;
    width: 800px;
-   margin-top: 0px;
+   margin-top: 300px;
    /*position: absolute;*/
    }
-   #rockThing{
+#rockThing{
     width: 100px;
     height: 100px;
     position: absolute;
   }
-  #shipDiv img{
+#shipDiv img{
     /*position: absolute;*/
   }
 #rock{

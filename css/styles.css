@@ -1,5 +1,5 @@
 body {
-background:linear-gradient(black,indigo);
+background:linear-gradient(indigo,black);
 }
 h1 {
 	color:white;
@@ -7,13 +7,14 @@ h1 {
 }
 #ship{
     width: 100px;
-    height: 150px;
+    height: 200px;
     margin-left: 850px; 
-    margin-top: 300px;
+    margin-top: 245px;
 }
 #ascore{
   text-align: center;
-  font-size: 25px
+  font-size: 25px;
+  color:grey;
 }
 #shipDiv {
    height: 100px;
@@ -27,10 +28,16 @@ h1 {
     position: absolute;
   }
 #shipDiv img{
+    transition:  0.5s;
     /*position: absolute;*/
   }
 #rock{
   width: 100px;
-  height: 100px;
+  height: 300px;
 }
+#yousuk{
+  color:red;
+  font-size: 100px;
+  text-align: center;
 
+}

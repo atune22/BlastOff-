@@ -21,7 +21,6 @@ var rockPosition = function(){
 }
 
 
-}
 var topSpace = 0;
 
 var movement = function() {
@@ -31,15 +30,21 @@ var movement = function() {
 	},10);
 }
 
+var GameOver = function() {
+	document.getElementById('yousuk').innerHTML = " Game Over! ";
+	topSpace = 0;
+	document.getElementById('rockThing').innerHTML = "";
+}
+
 var moveit = function() {
 	topSpace = topSpace + 10;
 	document.getElementById('rockThing').style.marginTop = topSpace +"px";
 }
 
 var check= function() {
-	if (topSpace > 600){
+	if (topSpace > 400){
 		if ( num == rockArray[rockMargin]){
-			alert("Game Over! Restart and close to try again.")
+			GameOver();
 
 		} else{
 			rockPosition();
@@ -52,8 +57,31 @@ var check= function() {
 	}
  
 }
+
+var Uscore = 0;
 var score = function() {
 	Uscore++;
-	document.getElementById('ascore').innerHTML
-}
+	document.getElementById('ascore').innerHTML = " Your Score: " + Uscore;
+};
 movement();
+
+
+
+
+
+document.onkeydown = checkKey;
+
+function checkKey(e) {
+
+    e = e || window.event;
+
+    if (e.keyCode == '37') {
+       // left arrow
+       leftMove();
+    }
+    else if (e.keyCode == '39') {
+       // right arrow
+       rightMove();
+    }
+
+}

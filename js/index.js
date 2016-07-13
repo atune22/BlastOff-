@@ -78,10 +78,26 @@ function checkKey(e) {
     if (e.keyCode == '37') {
        // left arrow
        leftMove();
+       spaceEdge();
     }
     else if (e.keyCode == '39') {
        // right arrow
        rightMove();
+       spaceEdge();
     }
 
 }
+
+
+var spaceEdge =function(){
+	if (num >= 1600){
+		num = 1450;
+	}
+	if (num <=100){
+		num =250;
+	}
+}
+
+
+
+

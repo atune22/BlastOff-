@@ -1,5 +1,5 @@
 body {
-background:linear-gradient(indigo,black);
+background-image: url("../assets/unnamed-3.png")
 }
 h1 {
 	color:white;
@@ -9,17 +9,17 @@ h1 {
     width: 100px;
     height: 200px;
     margin-left: 850px; 
-    margin-top: 245px;
+    margin-top: 300px;
 }
 #ascore{
   text-align: center;
   font-size: 25px;
-  color:grey;
+  color:red;
 }
 #shipDiv {
    height: 100px;
    width: 800px;
-   margin-top: 300px;
+   margin-top: 250px;
    /*position: absolute;*/
    }
 #rockThing{
@@ -40,4 +40,30 @@ h1 {
   font-size: 100px;
   text-align: center;
 
+}
+#Neptune{
+  margin-top: 47px;
+  margin-left: 1200px; 
+  width: 175px;
+  height: 150px;
+  position: absolute;
+}
+#Jupiter{
+  width: 190px;
+  height: 175px;
+  position: absolute;
+}
+#Saturn{
+  margin-top: 200px;
+  margin-left: 500px;
+  width: 190px;
+  height: 120px;
+  position: absolute;
+}
+#UrANUS{
+  margin-top: 300px;
+  margin-left: 700px;
+  position: absolute;
+  width: 140px;
+  height: 150px;
 }

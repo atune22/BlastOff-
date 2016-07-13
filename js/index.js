@@ -58,14 +58,14 @@ var check= function() {
  
 }
 
+
+
 var Uscore = 0;
 var score = function() {
 	Uscore++;
 	document.getElementById('ascore').innerHTML = " Your Score: " + Uscore;
 };
 movement();
-
-
 
 
 

@@ -27,12 +27,13 @@ var movement = function() {
 	setInterval(function() {
 		check();
 		moveit();
-	},10);
+	},7);
 }
 
 var GameOver = function() {
 	document.getElementById('yousuk').innerHTML = " Game Over! ";
 	topSpace = 0;
+	document.onkeydown = console.log();
 	document.getElementById('rockThing').innerHTML = "";
 }
 
@@ -43,7 +44,7 @@ var moveit = function() {
 
 var check= function() {
 	if (topSpace > 400){
-		if ( num == rockArray[rockMargin]){
+		if ( num == rockArray[rockMargin] || (num >= rockArray[rockMargin] && !(num > rockArray[rockMargin] + 10) ) ){
 			GameOver();
 
 		} else{

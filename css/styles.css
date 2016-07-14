@@ -9,12 +9,12 @@ h1 {
     width: 100px;
     height: 200px;
     margin-left: 850px; 
-    margin-top: 300px;
+    margin-top: 235px;
 }
 #ascore{
   text-align: center;
   font-size: 25px;
-  color:red;
+  color:lime;
 }
 #shipDiv {
    height: 100px;
@@ -28,7 +28,7 @@ h1 {
     position: absolute;
   }
 #shipDiv img{
-    transition:  0.5s;
+    transition:  0.1s;
     /*position: absolute;*/
   }
 #rock{

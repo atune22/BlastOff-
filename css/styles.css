@@ -9,7 +9,7 @@ h1 {
     width: 100px;
     height: 200px;
     margin-left: 850px; 
-    margin-top: 325px;
+    margin-top: 320px;
 }
 #ascore{
   text-align: center;
@@ -67,3 +67,9 @@ h1 {
   width: 140px;
   height: 150px;
 }
+#Nyan{
+  margin-top: -300px;
+  margin-left: 7px;
+  position: absolute;
+  width: 500px;
+  height: 300px;
